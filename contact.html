@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="javascript.js"></script>
+    </head>
+
+    <body>
+        <div id="sidenav_menu" class="sidenav">
+            <ul class="menu">
+                <li class="menu_item"><a href="index.html">Home</a></li>
+                <li class="menu_item"><a href="">Research</a></li>
+                <li class="menu_item"><a href="">Teaching</a></li>
+                <li class="menu_item"><a href="music.html">Music</a></li>
+                <li class="menu_item"><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+        <main>
+            <div id="body_dimmer" class="overlay" onclick="openMenu()"></div>
+            <div id="menu_button" class="menu_icon_rectangle" onclick="openMenu()">
+                <div class="menu_icon_line_grid">
+                    <div id="menu_icon_line_1"></div>
+                    <div id="menu_icon_empty_line_1"></div>
+                    <div id="menu_icon_line_2"></div>
+                    <div id="menu_icon_empty_line_2"></div>
+                    <div id="menu_icon_line_3"></div>
+                </div>
+            </div>
+            <div id="padding_block" class="menu_padding_block"></div>
+            <div class="contact_page_layout_container">
+                <div class="reach_out_rectangle">
+                    <div class="reach_out_grid">
+                        <p id="reach_out_line_1">Reach out.</p>
+                        <p id="reach_out_line_2">Reach out.</p>
+                        <p id="reach_out_line_3">Reach out.</p>
+                    </div>
+                </div>
+                <div class="container">
+                <form action="post.php">
+                    <div class="form_line">
+                        <label for="first_name">First Name*</label>
+                        <input type="text" id="fname" name="first_name" placeholder="" required>
+                    </div>      
+
+                    <div class="form_line">
+                        <label for="last_name">Last Name*</label>
+                        <input type="text" id="lname" name="last_name" placeholder=""  required>
+                    </div>  
+
+                    <div class="form_line">
+                        <label for="e_mail">E-mail*</label>
+                        <input type="email" id="email" name="e_mail" placeholder="" required>
+                    </div>  
+
+                    <div class="form_line">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="object" name="subject" placeholder="What is your inquiry about?">
+                    </div>  
+                    
+                    <div class="form_line">
+                        <label for="message">Message</label>
+                        <textarea id="subject" name="message" placeholder="Fire away!" style="height:200px"></textarea>
+                    </div>  
+                    
+                    <div class="form_line">
+                        <input type="submit" value="Submit">
+                    </div>  
+
+                </form>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <div class="copyright">Copyright <span>&#169;</span> 2021 Giovanni Deligios</div>
+            <div class="social_media_links">
+                <div><a href="https://www.facebook.com/gdeligios"><img src="icon/facebook_icon.png" width="100%"></a></div>
+                <div><a href="https://www.instagram.com/deligiovanni/"><img src="icon/instagram-icon.png" width="100%"></a></div>
+                <div><a href=""><img src="icon/linkedin_icon.png" width="100%"></a></div>
+            </div> 
+        </div>
+    </body> 
+
+</html>
